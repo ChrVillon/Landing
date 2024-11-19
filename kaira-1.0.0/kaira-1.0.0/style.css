@@ -1540,3 +1540,18 @@ a.btn-link.text-light:after {
   background-size: cover;
   transition: transform .3s ease-out;
 }
+
+.carousel-inner p {
+  margin: 0 25%;
+}
+ 
+.carousel-inner {
+  height: 100px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  bottom: 35%;
+  z-index: 1;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
