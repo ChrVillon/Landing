@@ -1555,3 +1555,86 @@ a.btn-link.text-light:after {
   z-index: 1;
   filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
 }
+
+.bg-nav {
+  background-color: #e6e6e6;
+}
+
+#billboard {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.7)), url('images/taller.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#billboard .section-title {
+  font-size: 2.55rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+#billboard p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #billboard {
+      background-image: url('images/taller.jpg');  /* Imagen diferente para móviles */
+      background-size: cover;
+      background-position: top; /* Cambiar la posición si es necesario */
+  }
+
+  #billboard .section-title {
+      font-size: 2rem;
+  }
+
+  #billboard p {
+      font-size: 1rem;
+  }
+}
+
+.navbar-brand {
+  font-weight: 900;
+}
+
+.product-item {
+  padding: 20px;
+  background-color: #f8f9fa; /* Fondo sutil */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Animación suave */
+}
+
+.product-item:hover {
+  background-color: #94bce7; /* Fondo cambia al pasar el cursor */
+  color: white; /* Cambiar color de texto */
+  transform: translateY(-5px); /* Elevar la tarjeta un poco */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.product-item:hover .product-title {
+  color: #fff; /* Cambiar color del título */
+}
+
+.product-item img {
+  transition: transform 0.3s ease; /* Animación suave para la imagen */
+}
+
+.product-item:hover img {
+  transform: scale(1.1); /* Efecto de zoom suave en la imagen */
+}
+
+.product-title {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.product-item p {
+  font-size: 14px;
+}
