@@ -1623,6 +1623,7 @@ a.btn-link.text-light:after {
 }
 
 .product-item img {
+  margin-bottom: 15px;
   transition: transform 0.3s ease; /* Animación suave para la imagen */
 }
 
@@ -1632,6 +1633,7 @@ a.btn-link.text-light:after {
 
 .product-title {
   font-size: 18px;
+  margin-top: 10px;
   transition: color 0.3s ease;
 }
 
