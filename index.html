@@ -15,9 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="homepage">
@@ -65,13 +63,12 @@
   <section class="features py-5 " id="servicios">
     <div class="container">
       <h2 class="text-center mb-4">Nuestros servicios</h2>
-      <p class="text-center mb-5">Calidad y confianza en cada reparación. Descubre todo lo que podemos hacer por tu
-        vehículo.</p>
+      <p class="text-center mb-5">Calidad y confianza en cada reparación. Descubre algunos de nuestros servicios para ti y tu vehículo.</p>
       <div class="row justify-content-center">
         <div class="col-md-4 mb-5">
           <div class="product-item text-center">
             <img class="img-fluid" src="images/motor.png" alt="motor" width="60">
-            <h5 class="product-title">Reparación de motores</h5>
+            <h5 class="product-title fw-bold">Reparación de motores</h5>
             <p>Reparamos y diagnosticamos fallos en motores de todo tipo. Garantizamos un servicio rápido y eficiente.
             </p>
           </div>
@@ -79,33 +76,36 @@
         <div class="col-md-4 mb-5">
           <div class="product-item text-center">
             <img class="img-fluid" src="images/freno.png" alt="frenos" width="60">
-            <h5 class="product-title">Revisión y reparacion de frenos</h5>
+            <h5 class="product-title fw-bold">Revisión y reparacion de frenos</h5>
             <p>Aseguramos que los frenos de tu vehículo estén en perfectas condiciones para garantizar tu seguridad.</p>
           </div>
         </div>
         <div class="col-md-4 mb-5">
           <div class="product-item text-center">
             <img class="img-fluid" src="images/aceite.png" alt="aceite" width="60">
-            <h5 class="product-title">Cambio de aceite</h5>
+            <h5 class="product-title fw-bold">Cambio de aceite</h5>
             <p>Realizamos el cambio de aceite con productos de alta calidad para mejorar el rendimiento de tu motor.</p>
           </div>
         </div>
-        <div class="col-md-4 mb-5">
-          <div class="product-item text-center mb-5">
+        <div class="col-md-4 mb-3">
+          <div class="product-item text-center">
             <img class="img-fluid" src="images/balanceo.png" alt="llantas" width="60">
-            <h5 class="product-title">Alineacion y balanceo</h5>
+            <h5 class="product-title fw-bold">Alineacion y balanceo</h5>
             <p>Servicios de alineación y balanceo de ruedas para mejorar la conducción y alinear el desgaste de los
               neumáticos.</p>
           </div>
         </div>
-        <div class="col-md-4 mb-5">
-          <div class="product-item text-center mb-5">
+        <div class="col-md-4 mb-3">
+          <div class="product-item text-center">
             <img class="img-fluid" src="images/combustible.png" alt="inyector" width="60">
-            <h5 class="product-title">Limpieza de inyectores</h5>
+            <h5 class="product-title fw-bold">Limpieza de inyectores</h5>
             <p>Limpieza de inyectores de combustible para mejorar la eficiencia del motor y reducir el consumo de
               combustible.</p>
           </div>
         </div>
+      </div>
+      <div class="text-center mb-1">
+        <a href="#contacto" class="btn btn-primary btn-lg text-uppercase mt-4 custom-btn">Pedir una Cotización</a>
       </div>
     </div>
   </section>
@@ -199,40 +199,42 @@
     </div>
   </section>
 
-  <section class="contact bg-light">
+  <section class="contact bg-light" id="contacto">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 py-5">
-          <div class="subscribe-header text-center pb-3">
+          <div class="subscribe-header text-center">
             <h3 class="section-title text-uppercase">Contactanos y agenda tu cita</h3>
           </div>
           <form id="form">
+            <p class="pb-2">Aqui podras contactarnos ya sea para agendar una cita, realizar alguna consulta o cotización</p>
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
-              <input id="form_name" type="text" class="form-control form-contro-lg" id="nombre" name="nombre" required>
+              <input id="form_name" type="text" class="form-control form-control-lg" id="nombre" name="nombre" required>
             </div>
             
             <div class="mb-3">
               <label for="email" class="form-label">Correo Electrónico</label>
-              <input id="form_email" type="email" class="form-control form-contro-lg" id="email" name="email" required>
+              <input id="form_email" type="email" class="form-control form-control-lg" id="email" name="email" required>
             </div>
             
             <div class="mb-3">
               <label for="consulta" class="form-label">Tipo de Consulta o Servicio</label>
-              <select id="fomr_select" class="form-select form-contro-lg" id="consulta" name="consulta" required>
+              <select id="form_select" class="form-select form-control-lg" id="consulta" name="consulta" required>
+                <option value="" disabled selected>Seleccione una opción</option>
                 <option value="Reparación">Reparación</option>
                 <option value="Mantenimiento">Mantenimiento</option>
                 <option value="Consulta Técnica">Consulta Técnica</option>
                 <option value="Otro">Otro</option>
               </select>
             </div>
-            <button class="btn btn-dark btn-lg text-uppercase w-100" type="submit">Enviar</button>
+            <button class="text-white btn btn-lg text-uppercase w-100 custom-btn" type="submit">Enviar</button>
           </form>
         </div>
         <div class="col-md-4 py-5 my-5">
           <h4 class="element-title text-capitalize my-3">Consultas o citas</h4>
-          <table class="table table-hover table-light table-borderless">
-            <thead>
+          <table class="custom-table">
+            <thead class="custom-head">
               <tr class="">
                 <th scope="col">#</th>
                 <th scope="col">Dia</th>
@@ -249,7 +251,7 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white py-4">
+  <footer class="text-white py-4">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -268,6 +270,11 @@
                     <li><a href="#" class="text-white">Política de Privacidad</a></li>
                     <li><a href="#" class="text-white">Términos de Uso</a></li>
                 </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Horarios de trabajos</h5>
+              <p>Lunes-Sábados: 7h00-19H00</p>
+              <p>Domingo no hay atención</p>
             </div>
         </div>
         <div class="text-center mt-4">

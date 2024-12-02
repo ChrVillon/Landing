@@ -1,4 +1,3 @@
-const databaseURL2 = 'https://landing-21e85-default-rtdb.firebaseio.com/data.json';
 const databaseURL = 'https://tallerlading-default-rtdb.firebaseio.com/data.json';
 
 let sendData = () => {
