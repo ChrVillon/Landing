@@ -5,24 +5,24 @@ let sendData = () => {
     const data = Object.fromEntries(formData.entries());
     data['saved'] = new Date().toLocaleString('es-CO', { timeZone: 'America/Guayaquil' })
     fetch(databaseURL, {
-        method: 'POST', // Método de la solicitud
+        method: 'POST', 
         headers: {
-            'Content-Type': 'application/json' // Especifica que los datos están en formato JSON
+            'Content-Type': 'application/json' 
         },
-        body: JSON.stringify(data) // Convierte los datos a JSON
+        body: JSON.stringify(data)
     })
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error en la solicitud: ${response.statusText}`);
             }
-            return response.json(); // Procesa la respuesta como JSON
+            return response.json(); 
         })
         .then(result => {
-            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
+            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); 
             location.reload()
         })
         .catch(error => {
-            alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
+            alert('Hemos experimentado un error. ¡Vuelve pronto!'); 
         });
     getData();
 }
@@ -31,24 +31,17 @@ let getData = async () => {
 
     try {
 
-        // Realiza la petición fetch a la URL de la base de datos
         const response = await fetch(databaseURL);
 
-        // Verifica si la respuesta es exitosa
         if (!response.ok) {
-            alert('Hemos experimentado un error. ¡Vuelve pronto1!'); // Maneja el error con un mensaje
+            alert('Hemos experimentado un error. ¡Vuelve pronto1!'); 
         }
 
-        // Convierte la respuesta en formato JSON
         const data = await response.json();
 
         if (data != null) {
 
-            // Cuente el número de suscriptores registrados por fecha a partir del objeto data
             let countSuscribers = new Map();
-
-
-            
 
             if (Object.keys(data).length > 0) {
                 for (let key in data) {
@@ -62,9 +55,6 @@ let getData = async () => {
                     countSuscribers.set(keyCombination, count + 1)
                 }
             }
-            // END
-
-            // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas 
             
             if (countSuscribers.size > 0) {
 
@@ -85,14 +75,12 @@ let getData = async () => {
                     cont += 1;
                 }
             }
-            // END
 
         }
 
     } catch (error) {
-        // Muestra cualquier error que ocurra durante la petición
         console.log(error);
-        alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
+        alert('Hemos experimentado un error. ¡Vuelve pronto!'); 
     }
 }
 

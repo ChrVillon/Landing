@@ -1634,10 +1634,8 @@ a.btn-link.text-light:after {
 @media (max-width: 768px) {
   #billboard {
     background-image: url('images/taller.jpg');
-    /* Imagen diferente para móviles */
     background-size: cover;
     background-position: top;
-    /* Cambiar la posición si es necesario */
   }
 
   #billboard .section-title {
@@ -1656,38 +1654,29 @@ a.btn-link.text-light:after {
 .product-item {
   padding: 20px;
   background-color: #f8f9fa;
-  /* Fondo sutil */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  /* Animación suave */
 }
 
 .product-item:hover {
   background-color: #94bce7;
-  /* Fondo cambia al pasar el cursor */
   color: white;
-  /* Cambiar color de texto */
   transform: translateY(-5px);
-  /* Elevar la tarjeta un poco */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  /* Sombra más intensa */
 }
 
 .product-item:hover .product-title {
   color: #fff;
-  /* Cambiar color del título */
 }
 
 .product-item img {
   margin-bottom: 15px;
   transition: transform 0.3s ease;
-  /* Animación suave para la imagen */
 }
 
 .product-item:hover img {
   transform: scale(1.1);
-  /* Efecto de zoom suave en la imagen */
 }
 
 .product-title {
@@ -1782,32 +1771,30 @@ form button {
   width: 100%; 
 }
 
-/* Estilo base de los enlaces */
+
 ul.list-unstyled li a {
-  text-decoration: none; /* Eliminar el subrayado por defecto */
-  color: white; /* Color blanco para los enlaces */
-  position: relative; /* Necesario para colocar el subrayado */
-  transition: color 0.3s ease; /* Transición suave para el color del texto */
+  text-decoration: none; 
+  color: white; 
+  position: relative; 
+  transition: color 0.3s ease; 
 }
 
-/* Efecto hover: Cambia el color del texto y aplica el subrayado */
 ul.list-unstyled li a:hover {
-  color: #007bff; /* Cambia el color del texto */
-  text-decoration: underline; /* Subraya el texto */
+  color: #007bff; 
+  text-decoration: underline; 
 }
 
 select {
   color: #000000 !important;
 }
 
-/* Estilo personalizado para el botón */
 .custom-btn {
-  background-color: #202050 !important; /* Fondo degradado */
-  color: white; /* Texto blanco */
-  padding: 12px 30px; /* Padding ajustado */
-  border-radius: 30px; /* Bordes redondeados */
-  text-transform: uppercase; /* Texto en mayúsculas */
-  transition: background 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  background-color: #202050 !important; 
+  color: white; 
+  padding: 12px 30px; 
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.3s ease; 
 }
 
 /* Efecto hover */
@@ -1817,12 +1804,11 @@ select {
 }
 
 .custom-btn:active {
-  background-color: #101030; /* Color más oscuro cuando se hace clic */
-  transform: scale(1); /* El botón vuelve a su tamaño normal al hacer clic */
+  background-color: #101030; 
 }
 
 .custom-btn:focus {
-  outline: none; /* Elimina el contorno por defecto */
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Sombra azul cuando se hace focus */
+  outline: none; 
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
 }
 
